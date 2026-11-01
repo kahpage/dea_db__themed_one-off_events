@@ -133,7 +133,7 @@ if __name__ == "__main__":
 
     i = "yuri_otome_no_rakuen"  # ==== 百合乙女の楽園 ====
     if i not in disabled_events:
-        # event_name = f"{i}"
+        event_name = "yuri_otome_no_rakuen"
         print(f"Processing {event_name} ...")
 
         media_ = [
@@ -193,6 +193,107 @@ if __name__ == "__main__":
         # event.circles = retrieve_circles(event_name)
         events.append(event)
 
+    i = "lyrical_heart"  # ==== リリカルハート ====
+    if i not in disabled_events:
+        event_name = "lyrical_heart"
+        print(f"Processing {event_name} ...")
+
+        media_ = [
+            Medium(
+                "lyrical_heart_nanoha-heart01.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20070208135135/http://nanoha-heart.ket.jp/",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+                comments="リリカルハート チラシ絵 早矢志さくら 様 （ぱるふぇ）",
+            ),
+            Medium(
+                "lyrical_heart_nano-heart01_hyoushi.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20111119213207/http://nanoha-heart.ket.jp/",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+                comments="（リリカルハート・まきますか？まきませんか？ex 共通カタログ） リリカルハート側 カタログ表紙絵 中村べーた 様 「ロマンティック身体検査」",
+            ),
+            Medium(
+                "lyrical_heart_nano-heart-bn01.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20111119213207/http://nanoha-heart.ket.jp/",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "lyrical_heart_nano-heart-bn.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20111119213207/http://nanoha-heart.ket.jp/",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "lyrical_heart_nano-maki_layout.pdf",
+                [
+                    Source(
+                        "https://web.archive.org/web/20080609052410/http://nanoha-heart.ket.jp/nanoha-heart_list.htm",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+        ]
+        locations = [
+            Location(
+                coordinates=(35.0960914, 136.9241402),
+                address="5 Chome-1-16 Higashimatabeecho, Minami Ward, Nagoya, Aichi 457-0833, Japan",
+                description="日本ガイシフォーラム　（旧称：名古屋市総合体育館 サン笠寺）",
+                sources=[
+                    Source(
+                        "https://web.archive.org/web/20111119213207/http://nanoha-heart.ket.jp/",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmj8MzT8MDc2f6y-m4HKbW409CgcjzT-W5sICqc_6FGCydMMyIdsr37ZfspiGt3FF4_viq4XCwlLXeK4sHeI428n6LGylj2FGApSjctQAT_dR0dwUcv0i9FQt7mKQ5a4YH401m5Ig=s0?imgmax=0",
+                url="https://maps.app.goo.gl/UY9XC3cm89b4qD8g7",
+            ),
+        ]
+        event = Event(
+            aliases=["リリカルハート", "Lyrical Heart", "Nanoha Heart"],
+            dates="2007.06.24",
+            circles=[],
+            media=media_,
+            sources=[
+                Source(
+                    "Date: https://web.archive.org/web/20111119213207/http://nanoha-heart.ket.jp/",
+                    (RT.Reliable, OT.Official),
+                ),
+                Source(
+                    'Alias "Lyrical Heart": direct transliteration',
+                    (RT.Guess, OT.Unsourced),
+                ),
+                Source(
+                    'Date: "Nanoha Heart": from website url', (RT.Guess, OT.Unsourced)
+                ),
+                Source("Participating circles: https://web.archive.org/web/20080609052410/http://nanoha-heart.ket.jp/nanoha-heart_list.htm", (RT.Reliable, OT.Official)),
+            ],
+            locations=locations,
+            description="Simultaneous with まきますか？まきませんか？ex",
+            comments="Successor event group: ユニゾンイン",
+            last_edited="2026.11.01",
+        )
+
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
+
     # i =   # ====  ====
     # if i not in disabled_events:
     #     # event_name = f"{i}"
@@ -212,7 +313,7 @@ if __name__ == "__main__":
     #         #     # comments=None,
     #         #     imageUrl="",
     #         #     url="",
-    #         # ),  
+    #         # ),
     #     ]
     #     event = Event(
     #         aliases=[],
