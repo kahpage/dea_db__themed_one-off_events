@@ -285,7 +285,10 @@ if __name__ == "__main__":
                 Source(
                     'Date: "Nanoha Heart": from website url', (RT.Guess, OT.Unsourced)
                 ),
-                Source("Participating circles: https://web.archive.org/web/20080609052410/http://nanoha-heart.ket.jp/nanoha-heart_list.htm", (RT.Reliable, OT.Official)),
+                Source(
+                    "Participating circles: https://web.archive.org/web/20080609052410/http://nanoha-heart.ket.jp/nanoha-heart_list.htm",
+                    (RT.Reliable, OT.Official),
+                ),
             ],
             locations=locations,
             description="Simultaneous with まきますか？まきませんか？ex",
@@ -295,6 +298,63 @@ if __name__ == "__main__":
 
         # Retrieve circles
         event.circles = retrieve_circles(event_name)
+        events.append(event)
+
+    i = "oshiro_matsuri"  # ==== 御城まつり ====
+    if i not in disabled_events:
+        event_name = "oshiro_matsuri"
+        print(f"Processing {event_name} ...")
+
+        media_ = [
+            Medium(
+                "oshiro_matsuri_oshiro.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20240714040747/http://ttc.ninja-web.net/oshiro/",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+                comments="御城まつり チラシ絵 紗汐冴 様 （おむつスナイパー）",
+            ),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+        ]
+        locations = [
+            Location(
+                coordinates=(35.1313699, 136.8980176),
+                address="1-1 Atsuta Nishimachi, Atsuta Ward, Nagoya, Aichi 456-0036, Japan",
+                description="名古屋国際会議場 白鳥ホール （名古屋市熱田区）",
+                sources=[
+                    Source(
+                        "https://web.archive.org/web/20240714040747/http://ttc.ninja-web.net/oshiro/",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn7Lqm9_Q0NEdha1ASXnQ5vdfjHbPJAbiquEME-dTc0IQlVMwwldl4PgCGmoqwXy7f1H0VzeeQ34Sfh31dwy-yLo6SG1i6J7RxOt2LCAXGM3sea6CVPSdGtLv8BqQvcjQ9wGbdq8g=s0?imgmax=0",
+                url="https://maps.app.goo.gl/WvWpsu1s7P6fTsdj9",
+            ),
+        ]
+        event = Event(
+            aliases=["御城まつり", "Oshiro Matsuri"],
+            dates="2018.11.04",
+            circles=[],
+            media=media_,
+            sources=[
+                Source(
+                    "Date: https://web.archive.org/web/20240714040747/http://ttc.ninja-web.net/oshiro/",
+                    (RT.Reliable, OT.Official),
+                ),
+                # Source("Participating circles: ", (RT.Reliable, OT.Official)),
+            ],
+            locations=locations,
+            description="Part of the 名古屋熱田同人祭2018秋 joint venue, featuring ツインテールカーニバル9, 制服宣言2, 絶対ニーソ, 百合乙女の楽園, 艦隊ぱれーど２, 御城まつり, 月下の祭典Returns, アズールフェスタ, BanG Dreamer's Party! in 名古屋 and 魔法少女本作製計画SP",
+            # comments=None,
+            last_edited="2026.11.01",
+        )
+
+        # Retrieve circles
+        # event.circles = retrieve_circles(event_name)
         events.append(event)
 
     # i =   # ====  ====
@@ -337,7 +397,45 @@ if __name__ == "__main__":
     #     # event.circles = retrieve_circles(event_name)
     #     events.append(event)
 
-    # ==== event group ====
+    # i =   # ====  ====
+    # if i not in disabled_events:
+    #     # event_name = f"{i}"
+    #     print(f"Processing {event_name} ...")
+
+    #     media_ = [
+    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+    #     ]
+    #     locations = [
+    #         # Location(
+    #         #     coordinates=(,),
+    #         #     address="",
+    #         #     description="",
+    #         #     sources=[Source("", (ReliabilityTypes.Reliable, OriginTypes.Official))],
+    #         #     # comments=None,
+    #         #     imageUrl="",
+    #         #     url="",
+    #         # ),
+    #     ]
+    #     event = Event(
+    #         aliases=[],
+    #         dates="",
+    #         circles=[],
+    #         media=media_,
+    #         sources=[
+    #             # Source("Date: ", (RT.Reliable, OT.Official)),
+    #             # Source("Participating circles: ", (RT.Reliable, OT.Official)),
+    #         ],
+    #         locations=locations,
+    #         description=None,
+    #         # comments=None,
+    #         # last_edited="",
+    #     )
+
+    #     # Retrieve circles
+    #     # event.circles = retrieve_circles(event_name)
+    #     events.append(event)
 
     # ==== event group ====
     event_group = EventGroup(
