@@ -107,6 +107,7 @@ if __name__ == "__main__":
         event = Event(
             aliases=["絶対ニーソ", "Zettai Knee Socks"],
             dates="2018.11.04",
+            links=["http://ttc.ninja-web.net/"],
             circles=[],
             media=media_,
             sources=[
@@ -169,6 +170,7 @@ if __name__ == "__main__":
         event = Event(
             aliases=["百合乙女の楽園", "Yuri Otome no Rakuen"],
             dates="2018.11.04",
+            links=["http://ttc.ninja-web.net/"],
             circles=[],
             media=media_,
             sources=[
@@ -268,6 +270,7 @@ if __name__ == "__main__":
         event = Event(
             aliases=["リリカルハート", "Lyrical Heart", "Nanoha Heart"],
             dates="2007.06.24",
+            links=["http://nanoha-heart.ket.jp/"],
             circles=[],
             media=media_,
             sources=[
@@ -337,16 +340,13 @@ if __name__ == "__main__":
     # ==== event group ====
 
     # ==== event group ====
-    media = []
-    links = []
-
     event_group = EventGroup(
         aliases=[
             "One-off Touhou Project events",
         ],
         events=events,
-        media=media,
-        links=links,
+        media=[],
+        links=[],
         sources=[],
         comments=None,
         description="Collection of one-off events with miscellaneous themes.",
