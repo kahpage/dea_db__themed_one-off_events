@@ -291,7 +291,7 @@ if __name__ == "__main__":
                 ),
             ],
             locations=locations,
-            description="Simultaneous with まきますか？まきませんか？ex",
+            description="Simultaneous with まきますか？まきませんか？ex and 月下の祭典",
             comments="Successor event group: ユニゾンイン",
             last_edited="2026.11.01",
         )
