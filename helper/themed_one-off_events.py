@@ -357,45 +357,68 @@ if __name__ == "__main__":
         # event.circles = retrieve_circles(event_name)
         events.append(event)
 
-    # i =   # ====  ====
-    # if i not in disabled_events:
-    #     # event_name = f"{i}"
-    #     print(f"Processing {event_name} ...")
+    i = "tsuki_no_utage"  # ==== 月之宴 ====
+    if i not in disabled_events:
+        event_name = "tsuki_no_utage"
+        print(f"Processing {event_name} ...")
 
-    #     media_ = [
-    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
-    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
-    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
-    #     ]
-    #     locations = [
-    #         # Location(
-    #         #     coordinates=(,),
-    #         #     address="",
-    #         #     description="",
-    #         #     sources=[Source("", (ReliabilityTypes.Reliable, OriginTypes.Official))],
-    #         #     # comments=None,
-    #         #     imageUrl="",
-    #         #     url="",
-    #         # ),
-    #     ]
-    #     event = Event(
-    #         aliases=[],
-    #         dates="",
-    #         circles=[],
-    #         media=media_,
-    #         sources=[
-    #             # Source("Date: ", (RT.Reliable, OT.Official)),
-    #             # Source("Participating circles: ", (RT.Reliable, OT.Official)),
-    #         ],
-    #         locations=locations,
-    #         description=None,
-    #         # comments=None,
-    #         # last_edited="",
-    #     )
+        media_ = [
+            Medium(
+                "tsuki_no_utage_applicate.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20070210003520/http://tukinoutage.com/",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+                comments="イラスト：桐島りおな(SilverStone)",
+            ),
+            Medium(
+                "tsuki_no_utage_tukinoutage.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20070210003520/http://tukinoutage.com/",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+        ]
+        locations = [
+            Location(
+                coordinates=(34.7355454, 135.4914229),
+                address="2 Chome-2-2 Nishimiyahara, Yodogawa Ward, Osaka, 532-0004, Japan",
+                description="新大阪センイシティー ２号館 ５階展示場",
+                sources=[
+                    Source(
+                        "https://web.archive.org/web/20070210003520/http://tukinoutage.com/",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TD5ZxYDtclsLXFDQRPoy69FqVPCPqeniwGyAUf3N68_g8q8EWVmd9nhEuvLkTrJ9EKhbYs8247tOzKA_bQx2VOFwcrRrH23KoXweXaxs4_AIxCtaSm4smXLSYOd2jWQDIkwmNLutiJ-zcg=s0?imgmax=0",
+                url="https://maps.app.goo.gl/vhxPykERA7vdhLPs7",
+            ),
+        ]
+        event = Event(
+            aliases=["月之宴", "Tsuki no Utage"],
+            dates="2006.07.02",
+            circles=[],
+            media=media_,
+            sources=[
+                Source("Date: https://web.archive.org/web/20070210003520/http://tukinoutage.com/", (RT.Reliable, OT.Official)),
+                Source("Participating circles: https://web.archive.org/web/20070108151249/http://tukinoutage.com/circlelist.html", (RT.Reliable, OT.Official)),
+            ],
+            locations=locations,
+            description="Simultaneous with August Festival",
+            # comments=None,
+            last_edited="2026.11.01",
+        )
 
-    #     # Retrieve circles
-    #     # event.circles = retrieve_circles(event_name)
-    #     events.append(event)
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
 
     # i =   # ====  ====
     # if i not in disabled_events:
