@@ -601,27 +601,195 @@ if __name__ == "__main__":
                     )
                 ],
             ),
-            Medium("princess_diary_bnrpd.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd00.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd01.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd02.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd03.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd04.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd05.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd06.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd07.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd08.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd09.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd10.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd11.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd12.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd13.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd14.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd15.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd16.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd17.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd18.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
-            Medium("princess_diary_bnrpd19.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium(
+                "princess_diary_bnrpd.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd00.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd01.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd02.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd03.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd04.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd05.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd06.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd07.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd08.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd09.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd10.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd11.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd12.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd13.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd14.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd15.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd16.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd17.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd18.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_bnrpd19.png",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
             # Medium("", [Source("", (RT.Reliable, OT.Official))]),
             # Medium("", [Source("", (RT.Reliable, OT.Official))]),
         ]
@@ -719,6 +887,20 @@ if __name__ == "__main__":
         description="Collection of one-off events with miscellaneous themes.",
         last_edited="2026.10.13",
     )
+
+    # Check for missing media files and unreferenced media files
+    media = [m for e in event_group.events for m in e.media or []] + (event_group.media or [])
+    for m in media:
+        if m.path.startswith(("http://", "https://")):
+            continue
+        p = PATH_MEDIA / m.path
+        if not p.exists():
+            print(f"Warning: Medium file not found: {p}")
+
+    referenced = {m.path for m in media}
+    for p in PATH_MEDIA.rglob("*"):
+        if p.is_file() and p.relative_to(PATH_MEDIA).as_posix() not in referenced:
+            print(f"Warning: Media file not referenced in event group: {p}")
 
     print(f"Saving {Path(__file__).stem} database...")
     event_group.save(PATH_EVENT_GROUP, indent=None)
