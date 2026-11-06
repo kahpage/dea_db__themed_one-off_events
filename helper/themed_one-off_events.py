@@ -539,45 +539,132 @@ if __name__ == "__main__":
         event.circles = retrieve_circles(event_name)
         events.append(event)
 
-    # i =   # ====  ====
-    # if i not in disabled_events:
-    #     # event_name = f"{i}"
-    #     print(f"Processing {event_name} ...")
+    i = "princess_diary"  # ==== PrincessDiary ====
+    if i not in disabled_events:
+        event_name = "princess_diary"
+        print(f"Processing {event_name} ...")
 
-    #     media_ = [
-    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
-    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
-    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
-    #     ]
-    #     locations = [
-    #         # Location(
-    #         #     coordinates=(,),
-    #         #     address="",
-    #         #     description="",
-    #         #     sources=[Source("", (ReliabilityTypes.Reliable, OriginTypes.Official))],
-    #         #     # comments=None,
-    #         #     imageUrl="",
-    #         #     url="",
-    #         # ),
-    #     ]
-    #     event = Event(
-    #         aliases=[],
-    #         dates="",
-    #         circles=[],
-    #         media=media_,
-    #         sources=[
-    #             # Source("Date: ", (RT.Reliable, OT.Official)),
-    #             # Source("Participating circles: ", (RT.Reliable, OT.Official)),
-    #         ],
-    #         locations=locations,
-    #         description=None,
-    #         # comments=None,
-    #         # last_edited="",
-    #     )
+        media_ = [
+            Medium(
+                "princess_diary_paper01.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20261103080507/https://mattari-an.net/PD/paper01.jpg",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_paper02.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20230923132424/https://mattari-an.net/PD/gallery.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+                comments="チラシ絵提供：白苺 様 (WhiteStrawberry)",
+            ),
+            Medium(
+                "princess_diary_paper03.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20230923132424/https://mattari-an.net/PD/gallery.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+                comments="表紙絵提供：ナナセミオリ 様 (山猫WeBox)",
+            ),
+            Medium(
+                "princess_diary_titlelogo.gif",
+                [
+                    Source(
+                        "https://web.archive.org/web/20230923151902/https://mattari-an.net/PD/list.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_kannai.pdf",
+                [
+                    Source(
+                        "https://web.archive.org/web/20230923151902/https://mattari-an.net/PD/list.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "princess_diary_kannai.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20230923151902/https://mattari-an.net/PD/list.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium("princess_diary_bnrpd.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd00.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd01.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd02.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd03.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd04.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd05.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd06.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd07.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd08.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd09.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd10.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd11.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd12.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd13.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd14.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd15.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd16.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd17.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd18.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            Medium("princess_diary_bnrpd19.png", [Source("https://web.archive.org/web/20261103232453/https://mattari-an.net/PD/link.html", (RT.Reliable, OT.Official))]),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+        ]
+        locations = [
+            Location(
+                coordinates=(35.0960914, 136.9241402),
+                address="5 Chome-1-16 Higashimatabeecho, Minami Ward, Nagoya, Aichi 457-0833, Japan",
+                description="日本ガイシフォーラム",
+                sources=[
+                    Source(
+                        "https://web.archive.org/web/20090428215325/http://mattari-an.net/PD/",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmj8MzT8MDc2f6y-m4HKbW409CgcjzT-W5sICqc_6FGCydMMyIdsr37ZfspiGt3FF4_viq4XCwlLXeK4sHeI428n6LGylj2FGApSjctQAT_dR0dwUcv0i9FQt7mKQ5a4YH401m5Ig=s0?imgmax=0",
+                url="https://maps.app.goo.gl/UY9XC3cm89b4qD8g7",
+            ),
+        ]
+        event = Event(
+            aliases=["PrincessDiary", "プリンセスダイアリー"],
+            dates="2009.06.28",
+            circles=[],
+            media=media_,
+            sources=[
+                Source(
+                    "Date: https://web.archive.org/web/20090428215325/http://mattari-an.net/PD/",
+                    (RT.Reliable, OT.Official),
+                ),
+                Source(
+                    "Participating circles: https://web.archive.org/web/20230923151902/https://mattari-an.net/PD/list.html",
+                    (RT.Reliable, OT.Official),
+                ),
+            ],
+            locations=locations,
+            description=None,
+            # comments=None,
+            last_edited="2026.11.03",
+        )
 
-    #     # Retrieve circles
-    #     # event.circles = retrieve_circles(event_name)
-    #     events.append(event)
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
 
     # i =   # ====  ====
     # if i not in disabled_events:
