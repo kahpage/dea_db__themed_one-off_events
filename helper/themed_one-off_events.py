@@ -877,7 +877,7 @@ if __name__ == "__main__":
     # ==== event group ====
     event_group = EventGroup(
         aliases=[
-            "One-off Touhou Project events",
+            "One-off themed events",
         ],
         events=events,
         media=[],
