@@ -834,6 +834,84 @@ if __name__ == "__main__":
         event.circles = retrieve_circles(event_name)
         events.append(event)
 
+    i = "shiny_smile"  # ==== SHiNY SMiLE ====
+    if i not in disabled_events:
+        event_name = "shiny_smile"
+        print(f"Processing {event_name} ...")
+
+        media_ = [
+            Medium(
+                "shiny_smile_paper.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20250625005822/https://mattari-an.net/shinysmile/",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+                comments="ラスト提供：夜叉姫 様 （Dolce vite）　ロゴ提供：えこＰ 様 （えこの日常）",
+            ),
+            Medium(
+                "shiny_smile_kannai.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20240416105938/https://mattari-an.net/shinysmile/list.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "shiny_smile_kannai.pdf",
+                [
+                    Source(
+                        "https://web.archive.org/web/20240416105938/https://mattari-an.net/shinysmile/list.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+        ]
+        locations = [
+            Location(
+                coordinates=(35.0960914, 136.9241402),
+                address="5 Chome-1-16 Higashimatabeecho, Minami Ward, Nagoya, Aichi 457-0833, Japan",
+                description="日本ガイシフォーラム",
+                sources=[
+                    Source(
+                        "https://web.archive.org/web/20090428215325/http://mattari-an.net/PD/",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmj8MzT8MDc2f6y-m4HKbW409CgcjzT-W5sICqc_6FGCydMMyIdsr37ZfspiGt3FF4_viq4XCwlLXeK4sHeI428n6LGylj2FGApSjctQAT_dR0dwUcv0i9FQt7mKQ5a4YH401m5Ig=s0?imgmax=0",
+                url="https://maps.app.goo.gl/UY9XC3cm89b4qD8g7",
+            ),
+        ]
+        event = Event(
+            aliases=["SHiNY SMiLE", "シャイニースマイル"],
+            dates="2009.05.31",
+            circles=[],
+            media=media_,
+            sources=[
+                Source(
+                    "Date: https://web.archive.org/web/20250625005822/https://mattari-an.net/shinysmile/",
+                    (RT.Reliable, OT.Official),
+                ),
+                Source(
+                    "Participating circles: https://web.archive.org/web/20240416105938/https://mattari-an.net/shinysmile/list.html",
+                    (RT.Reliable, OT.Official),
+                ),
+            ],
+            locations=locations,
+            description=None,
+            # comments=None,
+            last_edited="2026.11.11",
+        )
+
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
+
     # i =   # ====  ====
     # if i not in disabled_events:
     #     # event_name = f"{i}"
@@ -889,7 +967,9 @@ if __name__ == "__main__":
     )
 
     # Check for missing media files and unreferenced media files
-    media = [m for e in event_group.events for m in e.media or []] + (event_group.media or [])
+    media = [m for e in event_group.events for m in e.media or []] + (
+        event_group.media or []
+    )
     for m in media:
         if m.path.startswith(("http://", "https://")):
             continue
