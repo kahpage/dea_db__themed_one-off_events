@@ -912,6 +912,60 @@ if __name__ == "__main__":
         event.circles = retrieve_circles(event_name)
         events.append(event)
 
+    i = "azur_festa"  # ==== アズールフェスタ ====
+    if i not in disabled_events:
+        event_name = "azur_festa"
+        print(f"Processing {event_name} ...")
+
+        media_ = [
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+            Medium(
+                "azur_festa_banner.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20190311153049/http://ttc.ninja-web.net/azurlane/",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+        ]
+        locations = [
+            Location(
+                coordinates=(35.1313699, 136.8980176),
+                address="1-1 Atsuta Nishimachi, Atsuta Ward, Nagoya, Aichi 456-0036, Japan",
+                description="名古屋国際会議場 白鳥ホール",
+                sources=[
+                    Source(
+                        "https://web.archive.org/web/20190311153049/http://ttc.ninja-web.net/azurlane/",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn7Lqm9_Q0NEdha1ASXnQ5vdfjHbPJAbiquEME-dTc0IQlVMwwldl4PgCGmoqwXy7f1H0VzeeQ34Sfh31dwy-yLo6SG1i6J7RxOt2LCAXGM3sea6CVPSdGtLv8BqQvcjQ9wGbdq8g=s0?imgmax=0",
+                url="https://maps.app.goo.gl/WvWpsu1s7P6fTsdj9",
+            ),
+        ]
+        event = Event(
+            aliases=["アズールフェスタ", "Azur Festa"],
+            dates="2018.11.04",
+            circles=[],
+            media=media_,
+            sources=[
+                Source("Date: https://web.archive.org/web/20190311153049/http://ttc.ninja-web.net/azurlane/", (RT.Reliable, OT.Official)),
+                Source('Alias "Azur Festa": Guess from kana', (RT.Guess, OT.Unsourced)),
+                # Source("Participating circles: ", (RT.Reliable, OT.Official)),
+            ],
+            locations=locations,
+            description="Part of the 名古屋熱田同人祭2018秋 (ツインテールカーニバル9, 制服宣言2, 絶対ニーソ and 百合乙女の楽園) joint venue, which also features 艦隊ぱれーど２, 御城まつり, 月下の祭典Returns, アズールフェスタ, BanG Dreamer's Party! in 名古屋 and 魔法少女本作製計画SP",
+            # comments=None,
+            last_edited="2026.11.14",
+        )
+
+        # Retrieve circles
+        # event.circles = retrieve_circles(event_name)
+        events.append(event)
+
     # i =   # ====  ====
     # if i not in disabled_events:
     #     # event_name = f"{i}"
